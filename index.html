@@ -12,28 +12,60 @@
     <title>Econ 220 - Statistics</title>
 
     <!-- js -->
+    <script src="https://randojs.com/2.0.0.js"></script>
     <script src="mainJS.js"></script>
+    
 
     <!-- css -->
     <link rel="stylesheet" href="mainCSS.css">
+    
+
+    <style>
+        a:link {
+          color: rgb(23, 184, 233);
+          background-color: transparent;
+          text-decoration: none;
+        }
+        a:visited {
+          color: rgb(192, 255, 229);
+          background-color: transparent;
+          text-decoration: none;
+        }
+        a:hover {
+          color: rgb(209, 171, 4);
+          background-color: transparent;
+          text-decoration: underline;
+        }
+        a:active {
+          color: yellow;
+          background-color: transparent;
+          text-decoration: underline;
+        }
+        </style>
+
+
 </head>
 
 <body>
-
+    
+    <div><div></div><div><img src="logo.png" alt="Girl in a jacket" style="width:20%;"></div> </div>
     <header>
         &hearts;
         &spades;
         Econ 220 - Statistics
         &diams;
         &clubs;
+        <div></div>
     </header>
+
+   
 
     <section class="players">
         <div></div>
 
         <div class="centercard">
-            <div class="playertitle">Dealer</div>
-            <div class="score" id="dealerscore"></div>
+            <div class="playertitle">This Card</div>
+            
 
             <div class="card">
                 <div class="topcard"><br>
@@ -48,13 +80,13 @@
         </div>
 
         <div class="winpointer">
-            <label>win</label>
-            <div class="pointer" id="pointer"></div>
+            <label>What is the probability of drawing a red card?</label>
+            <div></div>
         </div>
 
         <div class="centercard">
-            <div class="playertitle">User</div>
-            <div class="score" id="userscore"></div>
+            <div class="playertitle">Last Card</div>
+            
 
             <div class="card">
                 <div class="topcard"><br>
@@ -71,18 +103,24 @@
     </section>
     
     <br><br><br>
-    <input type="button" value="Next Turn" id="mainbtn" onclick="lotocards();">
+    <input type="button" value="Next Card" id="mainbtn" onclick="lotocards();">
     <div class="resetbtn"><a id="resetbtn" onclick="location.reload();">↺</a></div>
 
     <footer>
         <div></div>
         <div class="turns" id="dealerturns"></div>
         <div></div>
-        <div class="turns" id="userturns"></div>
+        <div ></div>
         <div></div>
     </footer>
 
-    <div class="copyright">Kfir Goldfarb© 2019</div>
+
+
+
+    <div class="copyright">Credit: This game is an adaptation 
+        of the script for 
+        <a href="https://github.com/kggold4/card-war-game">Card War Game</a>
+         Kfir Goldfarb© 2019 </div>
 
 </body>
 </html>

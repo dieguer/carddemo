@@ -10,7 +10,7 @@ html {
 
 body {
     text-align: center;
-    background: #345;
+    background: rgb(1, 33, 105);
 }
 
 header {
@@ -25,7 +25,7 @@ header {
 }
 
 .playertitle {
-    color: white;
+    color: rgb(181, 133, 0);
     font-weight: bold;
     font-size: 1.5rem;
 }
@@ -96,7 +96,7 @@ header {
 }
 
 #resetbtn {
-    color: white;
+    color: rgb(181, 133, 0);
     font-size: 2rem;
     cursor: pointer;
     transition: 100ms ease-in-out;
@@ -120,7 +120,7 @@ footer {
 }
 
 #dealerturns::before {
-    content: "Dealer Turns: "
+    content: " Turns: "
 }
 
 #userturns::before {
